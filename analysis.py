@@ -5,11 +5,22 @@ df = pd.read_csv("energy_log.csv")
 print("Energy Log Data:")
 print(df)
 
-print("\nAverage consumption by device:")
-print(df.groupby("device")["consumption_watt"].mean())
+print("\nAverage energy consumption by device:")
+print(df.groupby("device")["energy_kwh"].mean())
 
-print("\nTotal consumption by device:")
-print(df.groupby("device")["consumption_watt"].sum())
+print("\nTotal energy consumption by device:")
+print(df.groupby("device")["energy_kwh"].sum())
 
 print("\nMost consuming device:")
-print(df.groupby("device")["consumption_watt"].sum().idxmax())
+print(df.groupby("device")["energy_kwh"].sum().idxmax())
+import matplotlib.pyplot as plt
+
+total_energy = df.groupby("device")["energy_kwh"].sum()
+
+total_energy.plot(kind="bar")
+
+plt.title("Total Energy Consumption by Device")
+plt.xlabel("Device")
+plt.ylabel("Energy Consumption (kWh)")
+plt.tight_layout()
+plt.show()

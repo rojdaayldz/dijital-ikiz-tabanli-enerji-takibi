@@ -7,10 +7,10 @@ from device import Device
 from office import Office
 
 
-lamp = Device("Lamp", 10)
-computer = Device("Computer", 120)
-air_conditioner = Device("Air Conditioner", 900)
-printer = Device("Printer", 300)
+lamp = Device("Lamp", 10, "Meeting Room")
+computer = Device("Computer", 120, "Open Office")
+air_conditioner = Device("Air Conditioner", 900, "Meeting Room")
+printer = Device("Printer", 300, "Open Office")
 
 office = Office("Smart Office")
 
@@ -23,7 +23,15 @@ office.add_device(printer)
 with open("energy_log.csv", "w", newline="") as file:
     writer = csv.writer(file)
 
-    writer.writerow(["time", "device", "is_on", "consumption_watt"])
+    writer.writerow([
+    "time",
+    "device",
+    "room",
+    "is_on",
+    "usage_hours",
+    "energy_kwh",
+    "temperature"
+])
 
     for i in range(10):
         print(f"\nSimulation step: {i + 1}")
@@ -31,19 +39,26 @@ with open("energy_log.csv", "w", newline="") as file:
         for device in office.devices:
             device.is_on = random.choice([True, False])
 
-            consumption = device.get_consumption()
+            usage_hours = random.randint(1, 8)
+            device.set_usage_hours(usage_hours)
+
+            energy = device.get_consumption()
+            temperature = random.randint(20, 30)
 
             print(
-                f"{device.name} | ON: {device.is_on} | Consumption: {consumption} W"
+                f"{device.name} | ON: {device.is_on} | Usage: {usage_hours} hours | Energy: {energy} kWh"
             )
 
             writer.writerow([
-                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                device.name,
-                device.is_on,
-                consumption
-            ])
+    datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    device.name,
+    device.room,
+    device.is_on,
+    usage_hours,
+    energy,
+    temperature
+])
 
-        print("Total Consumption:", office.total_consumption(), "W")
+        print("Total Energy:", office.total_consumption(), "kWh")
 
         time.sleep(1)

@@ -1,41 +1,41 @@
-time,device,is_on,consumption_watt
-2026-05-07 10:27:44,Lamp,False,0
-2026-05-07 10:27:44,Computer,True,120
-2026-05-07 10:27:44,Air Conditioner,True,900
-2026-05-07 10:27:44,Printer,False,0
-2026-05-07 10:27:45,Lamp,False,0
-2026-05-07 10:27:45,Computer,False,0
-2026-05-07 10:27:45,Air Conditioner,False,0
-2026-05-07 10:27:45,Printer,False,0
-2026-05-07 10:27:46,Lamp,True,10
-2026-05-07 10:27:46,Computer,True,120
-2026-05-07 10:27:46,Air Conditioner,True,900
-2026-05-07 10:27:46,Printer,True,300
-2026-05-07 10:27:47,Lamp,False,0
-2026-05-07 10:27:47,Computer,False,0
-2026-05-07 10:27:47,Air Conditioner,True,900
-2026-05-07 10:27:47,Printer,False,0
-2026-05-07 10:27:48,Lamp,False,0
-2026-05-07 10:27:48,Computer,True,120
-2026-05-07 10:27:48,Air Conditioner,True,900
-2026-05-07 10:27:48,Printer,True,300
-2026-05-07 10:27:49,Lamp,False,0
-2026-05-07 10:27:49,Computer,True,120
-2026-05-07 10:27:49,Air Conditioner,False,0
-2026-05-07 10:27:49,Printer,False,0
-2026-05-07 10:27:50,Lamp,True,10
-2026-05-07 10:27:50,Computer,True,120
-2026-05-07 10:27:50,Air Conditioner,True,900
-2026-05-07 10:27:50,Printer,False,0
-2026-05-07 10:27:51,Lamp,True,10
-2026-05-07 10:27:51,Computer,True,120
-2026-05-07 10:27:51,Air Conditioner,True,900
-2026-05-07 10:27:51,Printer,True,300
-2026-05-07 10:27:52,Lamp,True,10
-2026-05-07 10:27:52,Computer,False,0
-2026-05-07 10:27:52,Air Conditioner,True,900
-2026-05-07 10:27:52,Printer,False,0
-2026-05-07 10:27:53,Lamp,True,10
-2026-05-07 10:27:53,Computer,False,0
-2026-05-07 10:27:53,Air Conditioner,False,0
-2026-05-07 10:27:53,Printer,False,0
+time,device,room,is_on,usage_hours,energy_kwh,temperature
+2026-05-10 15:14:25,Lamp,Meeting Room,False,7,0,30
+2026-05-10 15:14:25,Computer,Open Office,True,5,0.6,24
+2026-05-10 15:14:25,Air Conditioner,Meeting Room,True,3,2.7,20
+2026-05-10 15:14:25,Printer,Open Office,False,4,0,27
+2026-05-10 15:14:26,Lamp,Meeting Room,False,6,0,30
+2026-05-10 15:14:26,Computer,Open Office,True,7,0.84,26
+2026-05-10 15:14:26,Air Conditioner,Meeting Room,True,7,6.3,30
+2026-05-10 15:14:26,Printer,Open Office,True,7,2.1,22
+2026-05-10 15:14:27,Lamp,Meeting Room,True,4,0.04,26
+2026-05-10 15:14:27,Computer,Open Office,False,4,0,27
+2026-05-10 15:14:27,Air Conditioner,Meeting Room,True,6,5.4,26
+2026-05-10 15:14:27,Printer,Open Office,False,7,0,22
+2026-05-10 15:14:28,Lamp,Meeting Room,False,1,0,27
+2026-05-10 15:14:28,Computer,Open Office,True,5,0.6,26
+2026-05-10 15:14:28,Air Conditioner,Meeting Room,True,5,4.5,23
+2026-05-10 15:14:28,Printer,Open Office,True,6,1.8,20
+2026-05-10 15:14:29,Lamp,Meeting Room,True,8,0.08,29
+2026-05-10 15:14:29,Computer,Open Office,False,3,0,23
+2026-05-10 15:14:29,Air Conditioner,Meeting Room,True,8,7.2,21
+2026-05-10 15:14:29,Printer,Open Office,True,4,1.2,20
+2026-05-10 15:14:30,Lamp,Meeting Room,True,8,0.08,27
+2026-05-10 15:14:30,Computer,Open Office,True,7,0.84,25
+2026-05-10 15:14:30,Air Conditioner,Meeting Room,False,3,0,27
+2026-05-10 15:14:30,Printer,Open Office,True,7,2.1,26
+2026-05-10 15:14:31,Lamp,Meeting Room,True,7,0.07,26
+2026-05-10 15:14:31,Computer,Open Office,True,1,0.12,23
+2026-05-10 15:14:31,Air Conditioner,Meeting Room,False,3,0,23
+2026-05-10 15:14:31,Printer,Open Office,False,3,0,23
+2026-05-10 15:14:32,Lamp,Meeting Room,False,6,0,24
+2026-05-10 15:14:32,Computer,Open Office,True,5,0.6,24
+2026-05-10 15:14:32,Air Conditioner,Meeting Room,True,4,3.6,29
+2026-05-10 15:14:32,Printer,Open Office,True,2,0.6,27
+2026-05-10 15:14:33,Lamp,Meeting Room,True,4,0.04,26
+2026-05-10 15:14:33,Computer,Open Office,True,8,0.96,28
+2026-05-10 15:14:33,Air Conditioner,Meeting Room,True,4,3.6,21
+2026-05-10 15:14:33,Printer,Open Office,True,3,0.9,25
+2026-05-10 15:14:34,Lamp,Meeting Room,False,3,0,30
+2026-05-10 15:14:34,Computer,Open Office,False,7,0,26
+2026-05-10 15:14:34,Air Conditioner,Meeting Room,True,7,6.3,30
+2026-05-10 15:14:34,Printer,Open Office,False,8,0,25
